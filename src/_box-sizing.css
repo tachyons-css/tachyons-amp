@@ -1,0 +1,9 @@
+/*
+ 
+  BOX SIZING
+
+*/
+*,*:after,*:before { 
+  box-sizing: border-box;
+}
+

@@ -1,0 +1,51 @@
+{
+  "name": "tachyons-amp",
+  "version": "0.0.1",
+  "description": "Functional CSS for AMP pages",
+  "author": "mrmrs",
+  "style": "css/tachyons-amp.min.css",
+  "main": "css/tachyons-amp.css",
+  "files": [
+    "css",
+    "src"
+  ],
+  "repository": "tachyons-css/tachyons",
+  "keywords": [
+    "css",
+    "oocss",
+    "postcss",
+    "functional css",
+    "design",
+    "responsive",
+    "performance",
+    "amp",
+    "google amp"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "copy-files": "^0.1.0",
+    "immutable-css-cli": "^1.1.1",
+    "normalize.css": "^7.0.0",
+    "tachyons-modules": "^1.1.10",
+    "tachyons-cli": "^1.0.11",
+    "watch": "^1.0.2"
+  },
+  "contributors": [
+    {
+      "name": "adam morse",
+      "email": "hi@mrmrs.cc"
+    },
+    {
+      "name": "john otander",
+      "url": "http://johnotander.com"
+    }
+  ],
+  "scripts": {
+    "start": "npm run build:watch",
+    "mutations": "immutable-css src/tachyons-amp.css --strict",
+    "build": "npm run build:css && npm run build:minify",
+    "build:css": "tachyons src/tachyons-amp.css > css/tachyons-amp.css",
+    "build:minify": "tachyons src/tachyons-amp.css -m > css/tachyons-amp.min.css",
+    "build:watch": "watch \"npm run build\" ./src/"
+  }
+}

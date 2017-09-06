@@ -1,0 +1,26 @@
+/*
+
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+
+*/
+
+
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               'helvetica neue', helvetica,
+               ubuntu,
+               'segoe ui',
+               sans-serif;
+}
+
+.serif {
+  font-family: georgia,
+               serif;
+}
+
+.monospaced {
+  font-family: monospace;
+}
+
