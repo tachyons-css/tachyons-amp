@@ -321,7 +321,6 @@ img { max-width: 100%; }
    OUTLINES
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -346,7 +345,6 @@ img { max-width: 100%; }
       n = none
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -415,7 +413,6 @@ img { max-width: 100%; }
      -pill = 9999px
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -448,7 +445,6 @@ img { max-width: 100%; }
      --solid  = solid
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -511,7 +507,6 @@ img { max-width: 100%; }
      --2 = literal value -2
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -568,7 +563,6 @@ img { max-width: 100%; }
     t-column-group = table-column-group
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -590,7 +584,6 @@ img { max-width: 100%; }
   FLEXBOX
 
   Media Query Extensions:
-   -ns = not-small
    -m  = medium
    -l  = large
 
@@ -659,7 +652,6 @@ img { max-width: 100%; }
      n = none
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -682,7 +674,6 @@ img { max-width: 100%; }
    Docs: http://tachyons.io/docs/typography/font-style/
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -735,7 +726,6 @@ img { max-width: 100%; }
    Docs: http://tachyons.io/docs/typography/tracking/
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -749,7 +739,6 @@ img { max-width: 100%; }
    Docs: http://tachyons.io/docs/typography/line-height
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -800,7 +789,6 @@ img { max-width: 100%; }
 
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -855,7 +843,6 @@ img { max-width: 100%; }
 
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -888,7 +875,6 @@ img { max-width: 100%; }
     OVERFLOW
 
     Media Query Extensions:
-      -ns = not-small
       -m  = medium
       -l  = large
 
@@ -911,7 +897,6 @@ img { max-width: 100%; }
    Docs: http://tachyons.io/docs/layout/position/
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -969,7 +954,6 @@ img { max-width: 100%; }
      7 = 7th step in spacing scale
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -1074,7 +1058,6 @@ img { max-width: 100%; }
 
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -1171,7 +1154,6 @@ img { max-width: 100%; }
    http://tachyons.io/docs/typography/measure/
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -1192,7 +1174,6 @@ img { max-width: 100%; }
    UTILITIES
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -1207,7 +1188,6 @@ img { max-width: 100%; }
    VISIBILITY
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -1222,7 +1202,6 @@ img { max-width: 100%; }
    WHITE SPACE
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -1235,7 +1214,6 @@ img { max-width: 100%; }
    VERTICAL ALIGN
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
@@ -1389,11 +1367,6 @@ img { max-width: 100%; }
 
   These media queries can be referenced like so:
 
-  @media (--breakpoint-not-small) {
-    .medium-and-larger-specific-style {
-      background-color: red;
-    }
-  }
 
   @media (--breakpoint-medium) {
     .medium-screen-specific-style {
@@ -1412,7 +1385,7 @@ img { max-width: 100%; }
 /* Debugging */
 /* Uncomment out the line below to help debug layout issues */
 /* @import './_debug'; */
-@media screen and (min-width: 30em) and (max-width: 60em) {
+@media screen and (min-width: 30em) {
  .cover-m { background-size: cover !important; }
  .contain-m { background-size: contain !important; }
  .bg-center-m { background-repeat: no-repeat; background-position: center center; }
@@ -1997,13 +1970,5 @@ img { max-width: 100%; }
  .v-mid-l { vertical-align: middle; }
  .v-top-l { vertical-align: top; }
  .v-btm-l { vertical-align: bottom; }
-}
-@media screen and (min-width: 30em) {
- .measure-ns { max-width: 30em; }
- .measure-wide-ns { max-width: 34em; }
- .measure-narrow-ns { max-width: 20em; }
- .indent-ns { text-indent: 1em; margin-top: 0; margin-bottom: 0; }
- .small-caps-ns { font-variant: small-caps; }
- .truncate-ns { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
 
