@@ -538,11 +538,14 @@ img { max-width: 100%; }
    http://tachyons.io/docs/layout/clearfix/
 
 */
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* 
+   Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ 
+   Removes reference to zoom: 1 as it's not supported
+   by AMP
+ */
 .cf:before, .cf:after { content: " "; display: table; }
 .cf:after { clear: both; }
-.cf { *zoom: 1; }
 /*
 
    DISPLAY
