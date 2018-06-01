@@ -45,7 +45,7 @@
     "mutations": "immutable-css src/tachyons-amp.css --strict",
     "build": "npm run build:css && npm run build:minify",
     "build:css": "tachyons src/tachyons-amp.css > css/tachyons-amp.css",
-    "build:minify": "tachyons src/tachyons-amp.css -m > css/tachyons-amp.min.css",
+    "build:minify": "tachyons src/tachyons-amp.css --minify > css/tachyons-amp.min.css",
     "build:watch": "watch \"npm run build\" ./src/"
   }
 }
