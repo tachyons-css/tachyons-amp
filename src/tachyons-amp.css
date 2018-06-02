@@ -32,7 +32,6 @@
 @import './_box-sizing';
 @import './_aspect-ratios';
 @import './_images';
-/* @import './_background-size'; */
 @import './_background-position';
 @import './_outlines';
 @import './_borders';
@@ -67,7 +66,6 @@
 @import './_type-scale';
 @import './_typography';
 @import './_utilities';
-/* @import './_visibility'; */
 @import './_white-space';
 @import './_vertical-align';
 @import './_hovers';
