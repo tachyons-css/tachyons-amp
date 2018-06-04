@@ -276,7 +276,6 @@ template { display: none; }
 */
 /* Responsive images! */
 img { max-width: 100%; }
-/* @import './_background-size'; */
 /*
 
     BACKGROUND POSITION
@@ -1171,7 +1170,6 @@ img { max-width: 100%; }
 .center { margin-right: auto; margin-left: auto; }
 .mr-auto { margin-right: auto; }
 .ml-auto { margin-left: auto; }
-/* @import './_visibility'; */
 /*
 
    WHITE SPACE
