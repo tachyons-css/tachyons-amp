@@ -1,6 +1,6 @@
 {
   "name": "tachyons-amp",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Functional CSS for AMP pages",
   "author": "mrmrs",
   "style": "css/tachyons-amp.min.css",
